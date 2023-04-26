@@ -1,0 +1,18 @@
+services:
+  client:
+    image: client_circuit_breaker
+    container_name: client
+    build: ./client
+    ports:
+      - "3000:3000"
+    # expose:
+    #   - "3000"
+
+  server:
+    image: server_circuit_breaker
+    container_name: server
+    build: ./server
+    ports:
+      - "3001:3001"
+    expose:
+      - "3001"
