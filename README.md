@@ -6,6 +6,8 @@
 2) client
 3) server
 
-Чтобы запустить введите в терминале команду: docker-compose up -d
+Чтобы запустить введите в терминале команду: docker-compose up d
+После запуска перейдите на адрес localhost:3000/status.
 
-Данный проект - реализация Circuit Breaker. Circuit Breaker - это шаблон обработки отказов сервиса, при котором сервер не всегда может обработать запрос клиента. Метод getStatus в файле ./client/queries.js реализует данный шаблон.
+Данный проект - это реализация шаблона Circuit Breaker на node js. Circuit Breaker - это шаблон обработки отказов сервиса, при котором сервер не всегда может обработать запрос клиента.
+Более подробную информацию можете получить здесь: https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker.
